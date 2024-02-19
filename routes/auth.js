@@ -20,6 +20,8 @@ router.post("/register",async(req,res)=>{
         console.log(err)
     }
 });
+
+//user login
 router.post("/login", async (req, res) => {
     try {
       const user = await User.findOne({ email: req.body.email });
